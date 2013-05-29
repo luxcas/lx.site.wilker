@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="lx.site.wilker">
+
+    <five:registerPackage package="." initialize=".initialize" />
+
+    <include package=".browser" />
+    <include file="skins.zcml" />
+    <genericsetup:registerProfile
+        name="default"
+        title="lx.site.wilker"
+        directory="profiles/default"
+        description="lx.site.wilker"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="lx.site.wilker"
+        directory="profiles/uninstall"
+        description="Uninstall lx.site.wilker"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+</configure>

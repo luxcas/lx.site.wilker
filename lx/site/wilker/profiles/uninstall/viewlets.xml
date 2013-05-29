@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<object>
+
+ <order
+    manager="plone.portaltop"
+    skinname="lx_site_wilker"
+    based-on="Sunburst Theme"
+    >
+  <viewlet name="plone.personal_bar" insert-before="*" remove="True" />
+ </order>
+ <!--
+ <order
+    manager="plone.portalheader"
+    skinname="lx_site_wilker"
+    based-on="Sunburst Theme"
+    >
+  <viewlet name="lx.site.wilker.languageseletor" remove="True" />
+  <viewlet name="lx.site.wilker.searchbox" remove="True" />
+  <viewlet name="lx.site.wilker.logo" remove="True" />
+ </order>
+ -->
+ <order
+    manager="plone.portalfooter"
+    skinname="lx_site_wilker"
+    based-on="Sunburst Theme"
+    >
+  <viewlet name="lx.site.wilker.footer" insert-before="*" remove="True" />
+ </order>
+
+ <!--
+ <hidden manager="plone.portalheader" skinname="lx_site_wilker">
+  <viewlet name="plone.app.i18n.locales.languageselector" remove="True" />
+  <viewlet name="plone.searchbox" remove="True" />
+  <viewlet name="plone.logo" remove="True" />
+ </hidden>
+ -->
+ <hidden manager="plone.portalfooter" skinname="lx_site_wilker">
+  <viewlet name="plone.footer" remove="True" />
+  <viewlet name="plone.colophon" remove="True" />
+  <!--
+  <viewlet name="plone.site_actions" remove="True" />
+  -->
+ </hidden>
+
+</object>

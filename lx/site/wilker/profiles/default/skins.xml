@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="lx_site_wilker">
+
+ <object name="lx_site_wilker_images"
+    meta_type="Filesystem Directory View"
+    directory="lx.site.wilker:skins/images" />
+ <object name="lx_site_wilker_templates"
+    meta_type="Filesystem Directory View"
+    directory="lx.site.wilker:skins/templates" />
+ <object name="lx_site_wilker_styles"
+    meta_type="Filesystem Directory View"
+    directory="lx.site.wilker:skins/styles" />
+ <object name="lx_site_wilker_javascripts"
+    meta_type="Filesystem Directory View"
+    directory="lx.site.wilker:skins/javascripts" />
+
+ <skin-path
+    name="lx_site_wilker"
+    based-on="Sunburst Theme"
+    >
+  <layer
+     name="lx_site_wilker_images"
+     insert-after="custom"
+     />
+  <layer
+     name="lx_site_wilker_templates"
+     insert-after="lx_site_wilker_images"
+     />
+  <layer
+     name="lx_site_wilker_styles"
+     insert-after="lx_site_wilker_templates"
+     />
+  <layer
+      name="lx_site_wilker_javascripts"
+      insert-after="lx_site_wilker_styles"
+      />
+ </skin-path>
+
+</object>

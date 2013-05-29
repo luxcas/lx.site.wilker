@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layers>
+ <layer
+    name="lx.site.wilker"
+    interface="lx.site.wilker.browser.interfaces.IThemeSpecific"
+    remove="True"
+    />
+</layers>

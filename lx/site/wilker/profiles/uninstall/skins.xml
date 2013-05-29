@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+
+ <skin-path name="*">
+  <layer name="lx_site_wilker_images" remove="True" />
+  <layer name="lx_site_wilker_templates" remove="True" />
+  <layer name="lx_site_wilker_styles" remove="True" />
+  <layer name="lx_site_wilker_javascripts" remove="True" />
+ </skin-path>
+
+</object>
