@@ -4,6 +4,9 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
+html{
+	font-family: VegurLight;
+}
 
 body {
 	margin: 0;
@@ -11,14 +14,13 @@ body {
 	background: rgba(0,0,0,.03) url(images/bg01.png) repeat !important;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px !important;
-	color: #3B3B3B;
+	color: #7C7C7C;
 }
 
 h1, h2, h3 {
 	margin: 0px;
 	padding: 0px;
 	letter-spacing: -2px;
-
 	font-weight: normal;
 	color: #2F6BCF;
 }
@@ -150,7 +152,8 @@ a:hover {
 #menu-wrapper {
 	overflow: hidden;
 	height: 56px;
-	background: #000000;
+	background: #0f1036;
+	
 }
 
 #menu {
@@ -193,6 +196,7 @@ a:hover {
 }
 
 #menu .current_page_item a {
+
 }
 
 /* Page */
@@ -383,14 +387,19 @@ a:hover {
 /* Footer */
 
 #footer {
+
 	margin: 0 auto;
-	padding: 3em 0em 5em 0em;
-	background: rgba(0,0,0,.06);
+	padding: 2em 0em 2em 0em;
+	background: #0f1036;
+}
+
+#footer #empresa{
+	font-size: 11px;
 }
 
 #footer p {
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 10px;
 	line-height: normal;
 	text-align: center;
 	color: #A0A0A0;
