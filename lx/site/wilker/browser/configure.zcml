@@ -50,7 +50,6 @@
       layer=".interfaces.IThemeSpecific"
       permission="zope.Public"
       />
-  -->
 
   <browser:viewlet
       name="lx.site.wilker.footer"
@@ -61,6 +60,7 @@
       permission="zope.Public"
       />
 
+  -->
 
   <!-- Resource directories registration -->
 
