@@ -1,0 +1,34 @@
+<html metal:use-macro="context/main_template/macros/master">
+  <head>
+    <title tal:content="template/title">The title</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  </head>
+  <body metal:fill-slot="main">
+    <!-- Lista noticia principal -->
+    <div id="box-noticia-principal" tal:define="lista python:context.portal_catalog(portal_type='News Item',
+                                                                                    review_state='published')[:2]">
+      <div class="item-noticia-principal" tal:repeat="item lista">        		
+        <a href="#" tal:attributes="href item/getURL">
+          <img src="" alt="#" title="#"
+               tal:attributes="src string:${item/getURL}/image_mini;
+                               alt item/Title;
+                               title item/Title" />
+        </a>
+        <h3 tal:content="item/Title">titulo</h3>
+        <p tal:content="item/Description">Descrição</p>
+        
+        <p>
+          <a href="#" class="more-link" tal:attributes="href item/getURL" >
+            <span>Leia mais</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div id="box-destaques">
+      <div class="item-destaque">
+        
+      </div>
+    </div>
+
+  </body>
+</html>
