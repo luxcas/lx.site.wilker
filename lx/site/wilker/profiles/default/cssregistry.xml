@@ -20,12 +20,21 @@
       for the latest list of all available keys and default values.
  -->
 
- <!-- EXAMPLE (UNCOMMENT TO MAKE AVAILABLE):
- <stylesheet
-    id="lx.site.wilker.css"
-    expression=""
-    authenticated="False"
-    />
- -->
+
+   <stylesheet title=""
+              applyPrefix="False"
+              authenticated="False"
+              bundle="default"
+              cacheable="True"
+              compression="safe"
+              conditionalcomment=""
+              cookable="True"
+              enabled="1"
+              expression=""
+              id="site.wilker.css"
+              media="all"
+              rel="stylesheet"
+              rendering="link"/>
+ 
 
 </object>
